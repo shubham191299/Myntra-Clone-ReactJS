@@ -95,6 +95,7 @@ header {
 }
 
 .action_container .action_name{
+  color: black;
   font-size: 13px;
   font-weight: 700;
 }
@@ -116,12 +117,18 @@ header {
   color: #3e4152;
   letter-spacing: .15em;
   font-size: 1.8em;
-  margin: 50px 0 10px 30px;
+  margin: 50px 0 50px 30px;
   max-height: 5em;
   font-weight: 700;
 }
 
-.category-items, .items-container {
+.category-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.items-container {
   width: 80%;
   margin: 50px 10%;
   display: flex;
@@ -408,5 +415,9 @@ a.action_container:link {
 }
 
 .spinner {
+  margin: 40px 0;
+}
+
+.banner-display{
   margin: 40px 0;
 }

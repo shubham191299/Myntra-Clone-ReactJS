@@ -1,6 +1,14 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { bagActions } from '../store/bagSlice'
 
 export default function BagItem({item}) {
+  const dispatch = useDispatch();
+
+  const handleRemoveFromCart = ()=>{
+    dispatch(bagActions.removeFromBag(item.id));
+  }
+
   return (
     <div className="bag-item-container">
         <div className="item-left-part">
@@ -23,7 +31,7 @@ export default function BagItem({item}) {
         </div>
         </div>
 
-        <div className="remove-from-cart" onClick={()=>{console.log("Item removed from Cart !!")}}>X</div>
+        <div className="remove-from-cart" onClick={handleRemoveFromCart}><span className="material-symbols-outlined add_icon">delete</span></div>
     </div>
   )
 }

@@ -93,6 +93,18 @@
         "return_period": 14,
         "delivery_date": "10 Oct 2023",
         "rating": { "stars": 4.2, "count": 5200 }
+      },
+      {
+        "id": "009",
+        "image": "images/9.jpg",
+        "company": "boohooMan",
+        "item_name": "Flannel Tarten Checked Shirt",
+        "original_price": 1749,
+        "current_price": 961,
+        "discount_percentage": 45,
+        "return_period": 14,
+        "delivery_date": "10 Oct 2023",
+        "rating": { "stars": 4.2, "count": 5200 }
       }
   ]
 }
